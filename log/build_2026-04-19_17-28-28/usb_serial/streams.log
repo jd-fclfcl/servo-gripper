@@ -1,0 +1,27 @@
+[0.007s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[0.085s] [  8%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[0.088s] [ 16%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[0.221s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[KControlFrame[m[K’ does not name a type
+[0.222s]    16 |     [01;31m[KControlFrame[m[K ctrlFrame;
+[0.222s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:32:17:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[0.280s]    32 |                 [01;31m[Kif[m[K (cmdPanel != nullptr) {
+[0.280s]       |                 [01;31m[K^~[m[K
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:34:19:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[0.280s]    34 |                 } [01;31m[Kelse[m[K {
+[0.280s]       |                   [01;31m[K^~~~[m[K
+[0.289s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.290s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:420:5:[m[K [01;31m[Kerror: [m[K‘[01m[KControlFrame[m[K’ was not declared in this scope
+[0.290s]   420 |     [01;31m[KControlFrame[m[K ctrlFrame;
+[0.290s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[0.292s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:434:26:[m[K [01;31m[Kerror: [m[K‘[01m[KcmdPanel[m[K’ was not declared in this scope
+[0.292s]   434 |                userCmd = [01;31m[KcmdPanel[m[K->getUserCmd();
+[0.292s]       |                          [01;31m[K^~~~~~~~[m[K
+[0.294s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:452:20:[m[K [01;31m[Kerror: [m[K‘[01m[KctrlFrame[m[K’ was not declared in this scope
+[0.294s]   452 |                    [01;31m[KctrlFrame[m[K.run();
+[0.294s]       |                    [01;31m[K^~~~~~~~~[m[K
+[0.333s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:216：CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o] 错误 1
+[0.334s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+[0.334s] gmake: *** [Makefile:146：all] 错误 2
+[0.336s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '2': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20

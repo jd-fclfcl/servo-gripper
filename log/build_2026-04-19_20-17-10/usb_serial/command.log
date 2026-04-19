@@ -1,0 +1,2 @@
+Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '2': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20

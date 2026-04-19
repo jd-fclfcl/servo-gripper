@@ -1,0 +1,10 @@
+[0.008s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.088s] [  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[0.310s] [ 14%] [32m[1mLinking CXX executable usb_serial[0m
+[0.358s] /usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: in function `ControlFrame::run(bool)':
+[0.358s] ControlFrame.cpp:(.text+0xf4): undefined reference to `Command::run()'
+[0.361s] collect2: error: ld returned 1 exit status
+[0.362s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:289：usb_serial] 错误 1
+[0.363s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+[0.363s] gmake: *** [Makefile:146：all] 错误 2
+[0.365s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '2': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20

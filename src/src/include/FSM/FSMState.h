@@ -14,7 +14,17 @@ fcl ***********************************************************************/
 #include "common/usercmd.h"
 ///////////////////////////////////////////////
 extern std::array<int32_t, 4> value;
-
+#include <iostream>
+#include <string>
+#include <vector>
+#include <array>
+#include <cstring>
+#include <sstream>
+#include <iomanip>
+#include <thread>
+#include <chrono>
+#include <cmath>
+#include <algorithm>
 
 
 ///////////////////////////////////////////////
@@ -26,7 +36,8 @@ public:
     virtual void run() = 0;
     virtual void exit() = 0;
     virtual FSMStateName checkChange() {return FSMStateName::INVALID;}
-    
+    void delay(int32_t delay_ms_between_sends){std::this_thread::sleep_for(std::chrono::milliseconds(delay_ms_between_sends));
+};
     FSMStateName _stateName;
     std::string _stateNameString;
 protected:

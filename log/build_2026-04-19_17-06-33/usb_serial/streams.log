@@ -1,0 +1,74 @@
+[0.008s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake /home/fcl/servo-gripper/src -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/fcl/servo-gripper/install/usb_serial
+[0.095s] -- The C compiler identification is GNU 11.4.0
+[0.153s] -- The CXX compiler identification is GNU 11.4.0
+[0.160s] -- Detecting C compiler ABI info
+[0.234s] -- Detecting C compiler ABI info - done
+[0.242s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.245s] -- Detecting C compile features
+[0.246s] -- Detecting C compile features - done
+[0.249s] -- Detecting CXX compiler ABI info
+[0.338s] -- Detecting CXX compiler ABI info - done
+[0.344s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.344s] -- Detecting CXX compile features
+[0.345s] -- Detecting CXX compile features - done
+[0.500s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.623s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.628s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.637s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.649s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.673s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.708s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.710s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.793s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.833s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.870s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.886s] -- Looking for pthread.h
+[0.984s] -- Looking for pthread.h - found
+[0.984s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.074s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.076s] -- Found Threads: TRUE  
+[1.131s] -- Building with ROS2
+[1.192s] -- Configuring done
+[1.196s] -- Generating done
+[1.197s] [33mCMake Warning:
+[1.197s]   Manually-specified variables were not used by the project:
+[1.197s] 
+[1.197s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.197s] 
+[1.197s] [0m
+[1.198s] -- Build files have been written to: /home/fcl/servo-gripper/build/usb_serial
+[1.205s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '0': /usr/bin/cmake /home/fcl/servo-gripper/src -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/fcl/servo-gripper/install/usb_serial
+[1.207s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[1.260s] [ 16%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o[0m
+[1.261s] [ 16%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[1.261s] [ 25%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o[0m
+[1.262s] [ 33%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o[0m
+[1.265s] [ 41%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[1.265s] [ 50%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o[0m
+[1.266s] [ 58%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o[0m
+[1.266s] [ 66%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o[0m
+[1.267s] [ 75%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o[0m
+[1.267s] [ 83%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o[0m
+[1.267s] [ 91%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o[0m
+[1.671s] [100%] [32m[1mLinking CXX executable usb_serial[0m
+[1.755s] [100%] Built target usb_serial
+[1.765s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '0': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[1.779s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --install /home/fcl/servo-gripper/build/usb_serial
+[1.792s] -- Install configuration: ""
+[1.792s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial
+[1.792s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/package_run_dependencies/usb_serial
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/parent_prefix_path/usb_serial
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.sh
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.dsv
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.sh
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.dsv
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.bash
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.sh
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.zsh
+[1.793s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.dsv
+[1.794s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.dsv
+[1.794s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/packages/usb_serial
+[1.794s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig.cmake
+[1.794s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig-version.cmake
+[1.794s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.xml
+[1.797s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '0': /usr/bin/cmake --install /home/fcl/servo-gripper/build/usb_serial

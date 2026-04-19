@@ -1,4 +1,0 @@
-Invoking command in '/home/fcl/USBSerial/build/do1': /usr/bin/cmake --build /home/fcl/USBSerial/build/do1 -- -j20 -l20
-Invoked command in '/home/fcl/USBSerial/build/do1' returned '0': /usr/bin/cmake --build /home/fcl/USBSerial/build/do1 -- -j20 -l20
-Invoking command in '/home/fcl/USBSerial/build/do1': /usr/bin/cmake --install /home/fcl/USBSerial/build/do1
-Invoked command in '/home/fcl/USBSerial/build/do1' returned '0': /usr/bin/cmake --install /home/fcl/USBSerial/build/do1

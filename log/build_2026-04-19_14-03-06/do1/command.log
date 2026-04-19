@@ -1,4 +1,0 @@
-Invoking command in '/home/fcl/USBSerial/build/do1': /usr/bin/cmake /home/fcl/USBSerial/src -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/fcl/USBSerial/install/do1
-Invoked command in '/home/fcl/USBSerial/build/do1' returned '0': /usr/bin/cmake /home/fcl/USBSerial/src -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/fcl/USBSerial/install/do1
-Invoking command in '/home/fcl/USBSerial/build/do1': /usr/bin/cmake --build /home/fcl/USBSerial/build/do1 -- -j20 -l20
-Invoked command in '/home/fcl/USBSerial/build/do1' returned '2': /usr/bin/cmake --build /home/fcl/USBSerial/build/do1 -- -j20 -l20

@@ -25,55 +25,23 @@ UserCommand KeyBoard::checkCmd()
 {
     switch (_c)
     {
-    // case '0':
-    //     return UserCommand::balanceTest;
-    // case '1':
-    //     return UserCommand::passive;
-    // case '2':
-    //     return UserCommand::fixedStand;
-    // case '3':
-    //     return UserCommand::freeStand;
-    // case '4':
-    //     return UserCommand::START;
-    // case '5':
-    //     return UserCommand::auto_WALK;
-    // case '6':
-    //     return UserCommand::MPCSTART;
-
-    // case '7':
-    //     return UserCommand::Pronk;
-   
-    //  case '8':
-    //     return UserCommand::MPCSTART;
-
-    // case 'e':
-    // case 'E':
-    //     return UserCommand::mode_Trot;
-
-    // case 'r':
-    // case 'R':
-    //     return UserCommand::mode_Walk;
-     
-    // case 'u':case 'U':
-    //      return UserCommand::SLOWLY;
- 
-    // case 'g':case 'G':
-    //     return UserCommand::WALKH;
-
-
-
-    // case 'm':  case 'M':
-    //     return UserCommand::Jump;
-    // case 'n': case 'N':
-    //     return UserCommand::TAKEOFF;
-    // case'b':case'B':
-
-    //     return UserCommand::Shank_hand;
-
-#ifdef COMPILE_WITH_MOVE_BASE
+    case '0':
+        return UserCommand::END;
+    case '1':
+        return UserCommand::LEFTGET;
+    case '2':
+        return UserCommand::LEFTPUT;
+    case '3':
+        return UserCommand::LEFTPUTRIGHTGET;
+    case '4':
+        return UserCommand::RIGHTGET;
     case '5':
-        return UserCommand::L2_Y;
-#endif // COMPILE_WITH_MOVE_BASE
+        return UserCommand::RIGHTPUT;
+    case '6':
+        return UserCommand::RIGHTPUTLEFTGET;
+
+   
+
     case ' ':
         userValue.setZero();
         return UserCommand::NONE;

@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K In member function ‘[01m[KUserCommand Command::checkCmd()[m[K’:
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:22:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   22 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 28%] [32m[1mLinking CXX executable usb_serial[0m
+[100%] Built target usb_serial
+-- Install configuration: ""
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/package_run_dependencies/usb_serial
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/parent_prefix_path/usb_serial
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.sh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.sh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.dsv
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.bash
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.sh
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.zsh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.dsv
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.dsv
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/packages/usb_serial
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig.cmake
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig-version.cmake
+-- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.xml

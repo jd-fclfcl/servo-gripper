@@ -9,4 +9,4 @@ FSMState::FSMState(FSMStateName stateName, std::string stateNameString)
     : _stateName(stateName),
       _stateNameString(stateNameString),
       _nextStateName(FSMStateName::INVALID),
-      Flag(StateFlag::staticFlag) {}
+      Flag(StateFlag::end) {}

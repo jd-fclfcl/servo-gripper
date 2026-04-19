@@ -17,6 +17,9 @@ FSMStateName State_LtoR::checkChange(){
     if(userCmd == UserCommand::LEFTGET){
         return FSMStateName::LEFTGET;
     }
+        else if(userCmd == UserCommand::END){
+        return FSMStateName::END;
+    }
     else if(userCmd == UserCommand::RIGHTGET){
         return FSMStateName::RIGHTGET;
     }

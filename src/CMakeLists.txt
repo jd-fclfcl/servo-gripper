@@ -8,17 +8,17 @@ option(REAL_ROBOT "Enable Unitree motor SDK" OFF)
 option(USE_ROS2 "Force build with ROS2" OFF)
 option(USE_ROS1 "Force build with ROS1(catkin)" OFF)
 
-# Eigen
-find_package(Eigen3 QUIET)
-if(Eigen3_FOUND)
-    include_directories(${EIGEN3_INCLUDE_DIR})
-endif()
+# # Eigen
+# find_package(Eigen3 QUIET)
+# if(Eigen3_FOUND)
+#     include_directories(${EIGEN3_INCLUDE_DIR})
+# endif()
 
-# OpenCV
-find_package(OpenCV QUIET)
-if(OpenCV_FOUND)
-    include_directories(${OpenCV_INCLUDE_DIRS})
-endif()
+# # OpenCV
+# find_package(OpenCV QUIET)
+# if(OpenCV_FOUND)
+#     include_directories(${OpenCV_INCLUDE_DIRS})
+# endif()
 
 # Boost
 find_package(Boost QUIET)
@@ -26,24 +26,7 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 
-# Unitree Legged SDK for real robot
-if(REAL_ROBOT)
-    include_directories(
-        ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/include/serialPort/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/include/unitreeMotor/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/include/IOPort
-    )
 
-    add_definitions(-DCOMPILE_WITHOUT_GO_M8010)
-
-    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../_motor/lib)
-    if(CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "aarch64")
-        set(EXTRA_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/lib/libUnitreeMotorSDK_Arm64.so)
-    else()
-        set(EXTRA_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/../_motor/lib/libUnitreeMotorSDK_Linux64.so)
-    endif()
-endif()
 
 # 添加项目头文件路径
 include_directories(
@@ -111,12 +94,7 @@ file(GLOB_RECURSE SRC_LIST CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/src/src/*.cc"
 )
 
-if(REAL_ROBOT)
-    file(GLOB_RECURSE MOTOR_SRC_LIST CONFIGURE_DEPENDS
-        "${CMAKE_CURRENT_SOURCE_DIR}/../_motor/src/*.cpp"
-    )
-    list(APPEND SRC_LIST ${MOTOR_SRC_LIST})
-endif()
+
 
 # 可执行文件
 add_executable(usb_serial ${SRC_LIST})

@@ -1,0 +1,4 @@
+Consolidate compiler generated dependencies of target usb_serial
+[  7%] Building CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o
+[ 14%] Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o
+[ 21%] Building CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o

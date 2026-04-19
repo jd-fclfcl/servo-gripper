@@ -29,6 +29,9 @@ FSMStateName State_RG::checkChange(){
      else if(userCmd == UserCommand::RIGHTPUTLEFTGET){
         return FSMStateName::RIGHTPUTLEFTGET;
     }
+        else if(userCmd == UserCommand::END){
+        return FSMStateName::END;
+    }
     else{
         return FSMStateName::RIGHTGET;
     }

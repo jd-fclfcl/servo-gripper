@@ -12,6 +12,7 @@ fcl ***********************************************************************/
 #include "FSM/State_LG.h"
 #include "FSM/State_LtoR.h"
 #include "FSM/State_RtoL.h"
+#include "FSM/State_END.h"
 
 struct FSMStateList{
     FSMState *invalid;
@@ -21,6 +22,7 @@ struct FSMStateList{
     FSMState *rightget;
     FSMState *leftputrightget;
     FSMState *rightputleftget;
+    FSMState *end;
     void deletePtr(){
      delete invalid;    
      delete leftput;
@@ -29,7 +31,7 @@ struct FSMStateList{
      delete rightget;
      delete leftputrightget;
      delete rightputleftget;
-
+     delete end;
     }
 };
 

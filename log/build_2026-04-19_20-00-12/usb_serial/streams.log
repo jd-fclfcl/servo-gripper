@@ -1,0 +1,56 @@
+[0.007s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.081s] Consolidate compiler generated dependencies of target usb_serial
+[0.099s] [ 14%] Building CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o
+[0.099s] [ 14%] Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o
+[0.102s] [ 21%] Building CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o
+[0.219s] /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp: In member function ‘UserCommand command::checkCmd()’:
+[0.220s] /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:23:1: warning: no return statement in function returning non-void [-Wreturn-type]
+[0.220s]    23 | }
+[0.220s]       | ^
+[0.220s] /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp: At global scope:
+[0.220s] /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:24:6: error: redefinition of ‘void command::run()’
+[0.220s]    24 | void command::run(){
+[0.220s]       |      ^~~~~~~
+[0.220s] In file included from /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:1:
+[0.220s] /home/fcl/servo-gripper/src/src/include/keyboard/Command.h:23:11: note: ‘void command::run()’ previously defined here
+[0.220s]    23 |      void run(){}
+[0.220s]       |           ^~~
+[0.233s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:216：CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o] 错误 1
+[0.233s] gmake[2]: *** 正在等待未完成的任务....
+[0.307s] In file included from /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3:
+[0.307s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:10:17: error: conflicting declaration ‘command* commandSource’
+[0.308s]    10 | extern command *commandSource; //global variable
+[0.308s]       |                 ^~~~~~~~~~~~~
+[0.308s] In file included from /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6,
+[0.308s]                  from /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3:
+[0.308s] /home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16: note: previous declaration as ‘command commandSource’
+[0.308s]    28 | extern command commandSource;
+[0.308s]       |                ^~~~~~~~~~~~~
+[0.308s] In file included from /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3:
+[0.308s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h: In destructor ‘ControlFrame::~ControlFrame()’:
+[0.308s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:17:24: error: type ‘class command’ argument given to ‘delete’, expected pointer
+[0.308s]    17 |                 delete commandSource;
+[0.308s]       |                        ^~~~~~~~~~~~~
+[0.314s] In file included from /home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21:
+[0.314s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:10:17: error: conflicting declaration ‘command* commandSource’
+[0.314s]    10 | extern command *commandSource; //global variable
+[0.314s]       |                 ^~~~~~~~~~~~~
+[0.314s] In file included from /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6,
+[0.314s]                  from /home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21:
+[0.314s] /home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16: note: previous declaration as ‘command commandSource’
+[0.314s]    28 | extern command commandSource;
+[0.314s]       |                ^~~~~~~~~~~~~
+[0.314s] In file included from /home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21:
+[0.315s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h: In destructor ‘ControlFrame::~ControlFrame()’:
+[0.315s] /home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:17:24: error: type ‘class command’ argument given to ‘delete’, expected pointer
+[0.315s]    17 |                 delete commandSource;
+[0.315s]       |                        ^~~~~~~~~~~~~
+[0.322s] /home/fcl/servo-gripper/src/src/src/usb_serial.cpp: In function ‘int main()’:
+[0.322s] /home/fcl/servo-gripper/src/src/src/usb_serial.cpp:426:40: error: base operand of ‘->’ has non-pointer type ‘command’
+[0.322s]   426 |                 userCmd = commandSource->getUserCmd();
+[0.322s]       |                                        ^~
+[0.326s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:76：CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o] 错误 1
+[0.364s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:244：CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o] 错误 1
+[0.364s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+[0.364s] gmake: *** [Makefile:146：all] 错误 2
+[0.366s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '2': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20

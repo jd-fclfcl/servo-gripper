@@ -1,0 +1,4 @@
+[  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[ 28%] [32m[1mLinking CXX executable usb_serial[0m

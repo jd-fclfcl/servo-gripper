@@ -1,0 +1,75 @@
+[0.008s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[0.074s] [  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[0.074s] [ 14%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[0.075s] [ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[0.180s] [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K In member function ‘[01m[KUserCommand command::checkCmd()[m[K’:
+[0.180s] [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:23:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[0.180s]    23 | [01;35m[K}[m[K
+[0.180s]       | [01;35m[K^[m[K
+[0.180s] [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K At global scope:
+[0.180s] [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:24:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid command::run()[m[K’
+[0.180s]    24 | void [01;31m[Kcommand[m[K::run(){
+[0.180s]       |      [01;31m[K^~~~~~~[m[K
+[0.180s] In file included from [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:1[m[K:
+[0.180s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:23:11:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid command::run()[m[K’ previously defined here
+[0.180s]    23 |      void [01;36m[Krun[m[K(){}
+[0.180s]       |           [01;36m[K^~~[m[K
+[0.195s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:216：CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o] 错误 1
+[0.195s] gmake[2]: *** 正在等待未完成的任务....
+[0.267s] In file included from [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21[m[K:
+[0.267s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:10:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcommand* commandSource[m[K’
+[0.267s]    10 | extern command *[01;31m[KcommandSource[m[K; //global variable
+[0.267s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[0.267s] In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+[0.267s]                  from [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21[m[K:
+[0.268s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcommand commandSource[m[K’
+[0.268s]    28 | extern command [01;36m[KcommandSource[m[K;
+[0.268s]       |                [01;36m[K^~~~~~~~~~~~~[m[K
+[0.268s] In file included from [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:21[m[K:
+[0.268s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:[m[K In destructor ‘[01m[KControlFrame::~ControlFrame()[m[K’:
+[0.268s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:17:24:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kclass command[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+[0.268s]    17 |                 delete [01;31m[KcommandSource[m[K;
+[0.268s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[0.275s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.275s] [01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:426:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kcommand[m[K’
+[0.275s]   426 |                 userCmd = commandSource[01;31m[K->[m[KgetUserCmd();
+[0.275s]       |                                        [01;31m[K^~[m[K
+[0.279s] In file included from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[0.279s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:10:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcommand* commandSource[m[K’
+[0.279s]    10 | extern command *[01;31m[KcommandSource[m[K; //global variable
+[0.279s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[0.279s] In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+[0.279s]                  from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[0.279s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcommand commandSource[m[K’
+[0.279s]    28 | extern command [01;36m[KcommandSource[m[K;
+[0.279s]       |                [01;36m[K^~~~~~~~~~~~~[m[K
+[0.279s] In file included from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[0.279s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:[m[K In destructor ‘[01m[KControlFrame::~ControlFrame()[m[K’:
+[0.279s] [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:17:24:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kclass command[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+[0.279s]    17 |                 delete [01;31m[KcommandSource[m[K;
+[0.280s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:[m[K At global scope:
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:7:10:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcommand* commandSource[m[K’
+[0.280s]     7 | command *[01;31m[KcommandSource[m[K=nullptr;
+[0.280s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.280s] In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+[0.280s]                  from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcommand commandSource[m[K’
+[0.280s]    28 | extern command [01;36m[KcommandSource[m[K;
+[0.280s]       |                [01;36m[K^~~~~~~~~~~~~[m[K
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:[m[K In constructor ‘[01m[KControlFrame::ControlFrame()[m[K’:
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:11:33:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kcommand[m[K’ and ‘[01m[Kcommand*[m[K’)
+[0.280s]    11 |     commandSource = new command([01;31m[K)[m[K;
+[0.280s]       |                                 [01;31m[K^[m[K
+[0.280s] In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+[0.280s]                  from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:13:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcommand& command::operator=(const command&)[m[K’
+[0.280s]    13 | class [01;36m[Kcommand[m[K{
+[0.280s]       |       [01;36m[K^~~~~~~[m[K
+[0.280s] [01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:13:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcommand*[m[K’ to ‘[01m[Kconst command&[m[K’
+[0.298s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:76：CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o] 错误 1
+[0.314s] gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:244：CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o] 错误 1
+[0.314s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+[0.314s] gmake: *** [Makefile:146：all] 错误 2
+[0.316s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '2': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20

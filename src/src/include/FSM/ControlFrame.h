@@ -3,9 +3,9 @@ fcl ***********************************************************************/
 #ifndef CONTROLFRAME_H
 #define CONTROLFRAME_H
 #include "keyboard/CmdPanel.h"
+#include "keyboard/Command.h"
 #include "FSM/FSM.h"
 
-extern CmdPanel *cmdPanel;
 
 class ControlFrame{
 public:
@@ -13,11 +13,14 @@ public:
 	~ControlFrame(){
 		delete _FSMController;
 		delete cmdPanel;
+		delete commandSource;
 	}
-	void run();
+	void run(bool i);
 private:
 	FSM* _FSMController;
-
+public:
+   CmdPanel *cmdPanel;
+   Command *commandSource;
 };
 
 #endif  //CONTROLFRAME_H

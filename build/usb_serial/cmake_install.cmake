@@ -1,8 +1,8 @@
-# Install script for directory: /home/fcl/USBSerial/src
+# Install script for directory: /home/fcl/servo-gripper/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fcl/USBSerial/install/usb_serial")
+  set(CMAKE_INSTALL_PREFIX "/home/fcl/servo-gripper/install/usb_serial")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/usb_serial/usb_serial"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/usb_serial" TYPE EXECUTABLE FILES "/home/fcl/USBSerial/build/usb_serial/usb_serial")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/usb_serial" TYPE EXECUTABLE FILES "/home/fcl/servo-gripper/build/usb_serial/usb_serial")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/usb_serial/usb_serial" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/usb_serial/usb_serial")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -59,11 +59,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/usb_serial")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/usb_serial")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/usb_serial")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/usb_serial")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -71,7 +71,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial/environment" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial/environment" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,42 +79,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial/environment" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial/environment" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/fcl/USBSerial/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/packages/usb_serial")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_index/share/ament_index/resource_index/packages/usb_serial")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial/cmake" TYPE FILE FILES
-    "/home/fcl/USBSerial/build/usb_serial/ament_cmake_core/usb_serialConfig.cmake"
-    "/home/fcl/USBSerial/build/usb_serial/ament_cmake_core/usb_serialConfig-version.cmake"
+    "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_core/usb_serialConfig.cmake"
+    "/home/fcl/servo-gripper/build/usb_serial/ament_cmake_core/usb_serialConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/USBSerial/src/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/usb_serial" TYPE FILE FILES "/home/fcl/servo-gripper/src/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -125,5 +125,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fcl/USBSerial/build/usb_serial/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fcl/servo-gripper/build/usb_serial/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

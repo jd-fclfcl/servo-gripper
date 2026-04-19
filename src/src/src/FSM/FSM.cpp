@@ -1,11 +1,33 @@
 /**********************************************************************                                   
 fcl ***********************************************************************/
 #include "FSM/FSM.h"
+#include "FSM/State_LP.h"
+#include "FSM/State_RG.h"
+#include "FSM/State_RP.h"
+#include "FSM/State_LG.h"
+#include "FSM/State_LtoR.h"
+#include "FSM/State_RtoL.h"
 #include <iostream>
 
-FSM::FSM(){
+class InvalidState : public FSMState {
+public:
+    InvalidState() : FSMState(FSMStateName::INVALID, "invalid") {}
+    void enter() override {}
+    void run() override {}
+    void exit() override {}
+    FSMStateName checkChange() override { return FSMStateName::INVALID; }
+};
 
-    _stateList.invalid = nullptr;
+FSM::FSM(){
+    _stateList.invalid = new InvalidState();
+    _stateList.leftput = new State_LP();
+    _stateList.rightput = new State_RP();
+    _stateList.leftget = new State_LG();
+    _stateList.rightget = new State_RG();
+    _stateList.leftputrightget = new State_LtoR();
+    _stateList.rightputleftget = new State_RtoL();
+    _stateList.end = new State_END(); // Assuming you have an END state
+
     initialize();
 }
 
@@ -15,7 +37,7 @@ FSM::~FSM(){
 }
 
 void FSM::initialize(){
-    _currentState = _stateList.invalid;
+    _currentState = _stateList.end;
     _currentState -> enter();
     _nextState = _currentState;
     _mode = FSMMode::NORMAL;
@@ -24,7 +46,7 @@ void FSM::initialize(){
 void FSM::run()
 {
   
-  
+//   std::cout << "当前状态: " << _currentState->_stateNameString << std::endl;
 
     if (_mode == FSMMode::NORMAL)
     {
@@ -73,6 +95,9 @@ FSMState* FSM::getNextState(FSMStateName stateName){
         break;
     case FSMStateName::RIGHTPUTLEFTGET:
         return _stateList.rightputleftget;
+        break;
+    case FSMStateName::END:
+        return _stateList.end;
         break;
     default:
         return _stateList.invalid;

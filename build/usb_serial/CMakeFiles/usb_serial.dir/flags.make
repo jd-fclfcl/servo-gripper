@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/fcl/USBSerial/src/src/include -I/home/fcl/USBSerial/src/src/src -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/fcl/servo-gripper/src/src/include -I/home/fcl/servo-gripper/src/src/src
 
 CXX_FLAGS = -std=gnu++11
 

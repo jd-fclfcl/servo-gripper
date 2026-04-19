@@ -1,7 +1,7 @@
 CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: \
- /home/fcl/USBSerial/src/src/src/KeyBoard/KeyBoard.cpp \
+ /home/fcl/servo-gripper/src/src/src/KeyBoard/KeyBoard.cpp \
  /usr/include/stdc-predef.h \
- /home/fcl/USBSerial/src/src/include/keyboard/KeyBoard.h \
+ /home/fcl/servo-gripper/src/src/include/keyboard/KeyBoard.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -82,8 +82,8 @@ CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/fcl/USBSerial/src/src/include/keyboard/CmdPanel.h \
- /home/fcl/USBSerial/src/src/include/common/enumClass.h \
+ /home/fcl/servo-gripper/src/src/include/keyboard/CmdPanel.h \
+ /home/fcl/servo-gripper/src/src/include/common/enumClass.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \

@@ -1,1 +1,0 @@
-controller_manager:joint_state_controller:mymsgs:robot_state_publisher:roscpp:std_msgs

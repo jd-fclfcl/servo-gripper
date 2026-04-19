@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[  8%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m

@@ -1,0 +1,14 @@
+[  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K In member function ‘[01m[KUserCommand Command::checkCmd()[m[K’:
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:22:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   22 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 28%] [32m[1mLinking CXX executable usb_serial[0m
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: in function `ControlFrame::run(bool)':
+ControlFrame.cpp:(.text+0x1a3): undefined reference to `Command::run()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:289：usb_serial] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

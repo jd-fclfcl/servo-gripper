@@ -9,17 +9,7 @@
 
 // 标准库
 // #include<usercmd.h>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <array>
-#include <cstring>
-#include <sstream>
-#include <iomanip>
-#include <thread>
-#include <chrono>
-#include <cmath>
-#include <algorithm>
+
 // POSIX 串口相关
 #include <fcntl.h>
 #include <unistd.h>
@@ -316,7 +306,7 @@ bool Send_data_once(USBSerial& serial, int32_t data1, int32_t data2, int32_t dat
     int bytes_written = serial.write(send_data);
 
     if (bytes_written == static_cast<int>(send_data.size())) {
-        std::cout << "[TX] " << payload;
+        // std::cout << "[TX] " << payload;
     } else {
         int err = errno;
         std::cerr << "发送失败（bytes_written=" << bytes_written << ", expected=" << send_data.size() 
@@ -342,13 +332,13 @@ bool Send_data_once(USBSerial& serial, int32_t data1, int32_t data2, int32_t dat
     std::vector<uint8_t> expected_bytes(send_data.begin(), send_data.end());
 
     // 打印期望的 HEX，便于对照接收数据
-    std::cout << "[EXPECT STR] " << expected_line_crlf << std::endl;
-    std::cout << "[EXPECT HEX]  " << BytesToHex(expected_bytes) << std::endl;
+    // std::cout << "[EXPECT STR] " << expected_line_crlf << std::endl;
+    // std::cout << "[EXPECT HEX]  " << BytesToHex(expected_bytes) << std::endl;
 
     while (waited < max_wait_ms) {
         std::vector<uint8_t> resp = serial.read(per_read_timeout_ms);
         if (!resp.empty()) {
-            std::cout << "[RX HEX] " << BytesToHex(resp) << std::endl;
+            // std::cout << "[RX HEX] " << BytesToHex(resp) << std::endl;
 
             // 【改进】将回传数据累积到一个缓冲区中
             resp_accum.insert(resp_accum.end(), resp.begin(), resp.end());
@@ -357,7 +347,7 @@ bool Send_data_once(USBSerial& serial, int32_t data1, int32_t data2, int32_t dat
 
             // 文本匹配（兼容没有 CRLF 或只返回主体的情形）
             if (text.find(expected_line) != std::string::npos || text.find(expected_line_crlf) != std::string::npos) {
-                std::cout << "[ACK] 收到文本回传确认: " << expected_line << std::endl;
+                // std::cout << "[ACK] 收到文本回传确认: " << expected_line << std::endl;
                 got_confirm = true;
                 break;
             }
@@ -366,7 +356,7 @@ bool Send_data_once(USBSerial& serial, int32_t data1, int32_t data2, int32_t dat
             if (!expected_bytes.empty()) {
                 auto it = std::search(resp_accum.begin(), resp_accum.end(), expected_bytes.begin(), expected_bytes.end());
                 if (it != resp_accum.end()) {
-                    std::cout << "[ACK] 收到二进制回传确认" << std::endl;
+                    // std::cout << "[ACK] 收到二进制回传确认" << std::endl;
                     got_confirm = true;
                     break;
                 }
@@ -411,6 +401,8 @@ int main() {
 
     flag = Field::keyboard;
     const int delay_ms_between_sends = 100;
+    ControlFrame ctrlFrame;
+
     while (true) {
         if (!serial.isOpen()) {
             if (!serial.open(port, baud_rate, 8, 1, 'N')) {
@@ -423,13 +415,15 @@ int main() {
         switch(flag)
         {
             case Field::keyboard:
-               userCmd = cmdPanel->getUserCmd();
+                if (ctrlFrame.cmdPanel != nullptr) {
+                    userCmd = ctrlFrame.cmdPanel->getUserCmd();
+                } else {
+                    userCmd = UserCommand::NONE;
+                }
                 // start 状态后等待 1000ms，再进入 FIELD1
-                std::this_thread::sleep_for(std::chrono::milliseconds(delay_ms_between_sends));
                 break;
             case Field::autoself:
-           
-                std::this_thread::sleep_for(std::chrono::milliseconds(delay_ms_between_sends));
+                userCmd = ctrlFrame.commandSource->getUserCmd();
                 break;
              default:
                std::cerr << "未知状态,please check the flag in the usb_serial.cpp file" << std::endl;
@@ -440,9 +434,8 @@ int main() {
             //  // 【改进】输出当前状态标记
             //  std::cout << "当前状态: " << static_cast<int>(flag) << " | 值: [" 
             //            << value[0] << ", " << value[1] << ", " << value[2] << ", " << value[3] << "]" << std::endl;
-                   ControlFrame ctrlFrame;
 
-                   ctrlFrame.run();
+                   ctrlFrame.run((bool)flag);
 
                 // 【改进】发送数据并验证回传
                 bool ok = Send_data_once(serial, value[0], value[1], value[2], value[3]);

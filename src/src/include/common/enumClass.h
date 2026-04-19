@@ -11,12 +11,14 @@ fcl ***********************************************************************/
 enum class UserCommand{
     // EXIT,
     NONE,
+    command,
     LEFTPUT,
     LEFTGET,
     RIGHTPUT,
     RIGHTGET,
     LEFTPUTRIGHTGET,
     RIGHTPUTLEFTGET,
+    END
     
  
 };
@@ -37,29 +39,24 @@ enum class FSMStateName{
     RIGHTGET,
     LEFTPUTRIGHTGET,
     RIGHTPUTLEFTGET,
+    END
    
 
    
 };
 
 enum class StateFlag{
-    staticFlag, // staticFlag,
-    Frist,
-    Second,
-    Third,
-    Fourth,
-    Fifth,
-    Sixth,
-    Seventh,
-    Eighth,
-    Ninth,
-    Tenth,
-    Eleventh,
-    Twelfth,
-    Thirteenth,
-    Fourteenth,
-    Fifteenth,
-    end
+  start,
+  down,
+  grip,
+  up,
+  relax,
+  back,
+  bringback,
+  transfer,
+  keep,
+  end,
+  another
 };
 
 #endif  // ENUMCLASS_H

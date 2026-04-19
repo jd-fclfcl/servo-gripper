@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fcl/USBSerial/src
+CMAKE_SOURCE_DIR = /home/fcl/servo-gripper/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fcl/USBSerial/build/usb_serial
+CMAKE_BINARY_DIR = /home/fcl/servo-gripper/build/usb_serial
 
 # Include any dependencies generated for this target.
 include CMakeFiles/usb_serial.dir/depend.make
@@ -70,170 +70,200 @@ include CMakeFiles/usb_serial.dir/progress.make
 include CMakeFiles/usb_serial.dir/flags.make
 
 CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/ControlFrame.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/ControlFrame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/ControlFrame.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/ControlFrame.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/FSM.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/FSM.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/FSM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/FSM.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/FSM.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/FSM.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/FSM.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/FSM.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/FSMState.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/FSMState.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/FSMState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/FSMState.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/FSMState.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/FSMState.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/FSMState.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/FSMState.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.s
+
+CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o: CMakeFiles/usb_serial.dir/flags.make
+CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_END.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_END.cpp
+
+CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_END.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.i
+
+CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_END.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_LG.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_LG.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_LG.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_LG.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_LG.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_LG.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_LG.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_LG.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_LP.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_LP.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_LP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_LP.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_LP.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_LP.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_LP.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_LP.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_LtoR.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_LtoR.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_LtoR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_LtoR.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_LtoR.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_LtoR.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_LtoR.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_LtoR.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_RG.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_RG.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_RG.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_RG.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_RG.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_RG.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_RG.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_RG.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_RP.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_RP.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_RP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_RP.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_RP.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_RP.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_RP.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_RP.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o: /home/fcl/USBSerial/src/src/src/FSM/State_RtoL.cpp
+CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o: /home/fcl/servo-gripper/src/src/src/FSM/State_RtoL.cpp
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o -c /home/fcl/USBSerial/src/src/src/FSM/State_RtoL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o -c /home/fcl/servo-gripper/src/src/src/FSM/State_RtoL.cpp
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/FSM/State_RtoL.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/FSM/State_RtoL.cpp > CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/FSM/State_RtoL.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/FSM/State_RtoL.cpp -o CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.s
+
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o: CMakeFiles/usb_serial.dir/flags.make
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o: /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o -c /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp
+
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp > CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.i
+
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: /home/fcl/USBSerial/src/src/src/KeyBoard/KeyBoard.cpp
+CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: /home/fcl/servo-gripper/src/src/src/KeyBoard/KeyBoard.cpp
 CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o -c /home/fcl/USBSerial/src/src/src/KeyBoard/KeyBoard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o -c /home/fcl/servo-gripper/src/src/src/KeyBoard/KeyBoard.cpp
 
 CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/KeyBoard/KeyBoard.cpp > CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/KeyBoard/KeyBoard.cpp > CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/KeyBoard/KeyBoard.cpp -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/KeyBoard/KeyBoard.cpp -o CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.s
 
 CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o: CMakeFiles/usb_serial.dir/flags.make
-CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o: /home/fcl/USBSerial/src/src/src/usb_serial.cpp
+CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o: /home/fcl/servo-gripper/src/src/src/usb_serial.cpp
 CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o: CMakeFiles/usb_serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o -c /home/fcl/USBSerial/src/src/src/usb_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o -MF CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o.d -o CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o -c /home/fcl/servo-gripper/src/src/src/usb_serial.cpp
 
 CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/USBSerial/src/src/src/usb_serial.cpp > CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fcl/servo-gripper/src/src/src/usb_serial.cpp > CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.i
 
 CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/USBSerial/src/src/src/usb_serial.cpp -o CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fcl/servo-gripper/src/src/src/usb_serial.cpp -o CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.s
 
 # Object files for target usb_serial
 usb_serial_OBJECTS = \
 "CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o" \
+"CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o" \
+"CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o" \
 "CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o"
 
@@ -243,71 +273,19 @@ usb_serial_EXTERNAL_OBJECTS =
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o
+usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o
+usb_serial: CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o
 usb_serial: CMakeFiles/usb_serial.dir/build.make
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
-usb_serial: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 usb_serial: CMakeFiles/usb_serial.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fcl/USBSerial/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable usb_serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fcl/servo-gripper/build/usb_serial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable usb_serial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usb_serial.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -319,6 +297,6 @@ CMakeFiles/usb_serial.dir/clean:
 .PHONY : CMakeFiles/usb_serial.dir/clean
 
 CMakeFiles/usb_serial.dir/depend:
-	cd /home/fcl/USBSerial/build/usb_serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fcl/USBSerial/src /home/fcl/USBSerial/src /home/fcl/USBSerial/build/usb_serial /home/fcl/USBSerial/build/usb_serial /home/fcl/USBSerial/build/usb_serial/CMakeFiles/usb_serial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fcl/servo-gripper/build/usb_serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fcl/servo-gripper/src /home/fcl/servo-gripper/src /home/fcl/servo-gripper/build/usb_serial /home/fcl/servo-gripper/build/usb_serial /home/fcl/servo-gripper/build/usb_serial/CMakeFiles/usb_serial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usb_serial.dir/depend
 

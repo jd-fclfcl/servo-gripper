@@ -1,0 +1,72 @@
+[0m-- GLOB mismatch![0m
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Building with ROS2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fcl/servo-gripper/build/usb_serial
+[35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[01m[K/home/fcl/servo-gripper/src/src/src/usb_serial.cpp:22:10:[m[K [01;31m[Kfatal error: [m[Kkeyboard/command.h: 没有那个文件或目录
+   22 | #include [01;31m[K"keyboard/command.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:244：CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K In member function ‘[01m[KUserCommand command::checkCmd()[m[K’:
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:23:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   23 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:[m[K At global scope:
+[01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:24:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid command::run()[m[K’
+   24 | void [01;31m[Kcommand[m[K::run(){
+      |      [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/fcl/servo-gripper/src/src/src/KeyBoard/Command.cpp:1[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:23:11:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid command::run()[m[K’ previously defined here
+   23 |      void [01;36m[Krun[m[K(){}
+      |           [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:216：CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o] 错误 1
+In file included from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:10:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcommand* commandSource[m[K’
+   10 | extern command *[01;31m[KcommandSource[m[K; //global variable
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+                 from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcommand commandSource[m[K’
+   28 | extern command [01;36m[KcommandSource[m[K;
+      |                [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:[m[K In destructor ‘[01m[KControlFrame::~ControlFrame()[m[K’:
+[01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:17:24:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kclass command[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+   17 |                 delete [01;31m[KcommandSource[m[K;
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:[m[K At global scope:
+[01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:7:10:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcommand* commandSource[m[K’
+    7 | command *[01;31m[KcommandSource[m[K=nullptr;
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+                 from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:28:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kcommand commandSource[m[K’
+   28 | extern command [01;36m[KcommandSource[m[K;
+      |                [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:[m[K In constructor ‘[01m[KControlFrame::ControlFrame()[m[K’:
+[01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:11:33:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kcommand[m[K’ and ‘[01m[Kcommand*[m[K’)
+   11 |     commandSource = new command([01;31m[K)[m[K;
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/fcl/servo-gripper/src/src/include/FSM/ControlFrame.h:6[m[K,
+                 from [01m[K/home/fcl/servo-gripper/src/src/src/FSM/ControlFrame.cpp:3[m[K:
+[01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:13:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcommand& command::operator=(const command&)[m[K’
+   13 | class [01;36m[Kcommand[m[K{
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/fcl/servo-gripper/src/src/include/keyboard/Command.h:13:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcommand*[m[K’ to ‘[01m[Kconst command&[m[K’
+gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:76：CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fcl/USBSerial/src
+CMAKE_SOURCE_DIR = /home/fcl/servo-gripper/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fcl/USBSerial/build/usb_serial
+CMAKE_BINARY_DIR = /home/fcl/servo-gripper/build/usb_serial
 
 # Utility rule file for usb_serial_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/usb_serial_uninstall.dir/compiler_depend.make
 include CMakeFiles/usb_serial_uninstall.dir/progress.make
 
 CMakeFiles/usb_serial_uninstall:
-	/usr/bin/cmake -P /home/fcl/USBSerial/build/usb_serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/fcl/servo-gripper/build/usb_serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 usb_serial_uninstall: CMakeFiles/usb_serial_uninstall
 usb_serial_uninstall: CMakeFiles/usb_serial_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/usb_serial_uninstall.dir/clean:
 .PHONY : CMakeFiles/usb_serial_uninstall.dir/clean
 
 CMakeFiles/usb_serial_uninstall.dir/depend:
-	cd /home/fcl/USBSerial/build/usb_serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fcl/USBSerial/src /home/fcl/USBSerial/src /home/fcl/USBSerial/build/usb_serial /home/fcl/USBSerial/build/usb_serial /home/fcl/USBSerial/build/usb_serial/CMakeFiles/usb_serial_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fcl/servo-gripper/build/usb_serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fcl/servo-gripper/src /home/fcl/servo-gripper/src /home/fcl/servo-gripper/build/usb_serial /home/fcl/servo-gripper/build/usb_serial /home/fcl/servo-gripper/build/usb_serial/CMakeFiles/usb_serial_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usb_serial_uninstall.dir/depend
 
