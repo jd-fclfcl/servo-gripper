@@ -13,6 +13,7 @@ fcl ***********************************************************************/
 #include <string>
 
 void setonce(const char* s) {
+    for(int i(0); i<1; i++)
     std::cout << s << std::endl;
 }
 
