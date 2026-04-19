@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[  8%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o[0m
+[ 58%] [32m[1mLinking CXX executable usb_serial[0m
+[100%] Built target usb_serial
+-- Install configuration: ""
+-- Installing: /home/fcl/USBSerial/install/do1/lib/do1/usb_serial
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/package_run_dependencies/do1
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/parent_prefix_path/do1
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/environment/ament_prefix_path.sh
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/environment/path.sh
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/environment/path.dsv
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/local_setup.bash
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/local_setup.sh
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/local_setup.zsh
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/local_setup.dsv
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/package.dsv
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/packages/do1
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/cmake/do1Config.cmake
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/cmake/do1Config-version.cmake
+-- Up-to-date: /home/fcl/USBSerial/install/do1/share/do1/package.xml

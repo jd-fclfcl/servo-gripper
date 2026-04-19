@@ -1,0 +1,32 @@
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o:(.bss+0x0): multiple definition of `userCmd'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o:(.bss+0x10): multiple definition of `value'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x10): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o:(.bss+0x20): multiple definition of `cmdPanel'; CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o:(.bss+0x20): first defined here
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o: in function `State_LG::State_LG()':
+State_LG.cpp:(.text+0x5a): undefined reference to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o: in function `State_LP::State_LP()':
+State_LP.cpp:(.text+0x5a): undefined reference to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o: in function `State_LtoR::State_LtoR()':
+State_LtoR.cpp:(.text+0x5a): undefined reference to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o: in function `State_RG::State_RG()':
+State_RG.cpp:(.text+0x5a): undefined reference to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o: in function `State_RP::State_RP()':
+State_RP.cpp:(.text+0x5a): undefined reference to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o:State_RtoL.cpp:(.text+0x5a): more undefined references to `FSMState::FSMState(FSMStateName, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)' follow
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/usb_serial.dir/build.make:295：usb_serial] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/usb_serial.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

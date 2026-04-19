@@ -1,0 +1,42 @@
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Building with ROS2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fcl/USBSerial/build/do1
+[35m[1mConsolidate compiler generated dependencies of target usb_serial[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable usb_serial[0m
+[100%] Built target usb_serial
+-- Install configuration: ""
+-- Installing: /home/fcl/USBSerial/install/do1/lib/do1/usb_serial
+-- Installing: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/package_run_dependencies/do1
+-- Installing: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/parent_prefix_path/do1
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/environment/ament_prefix_path.sh
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/environment/ament_prefix_path.dsv
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/environment/path.sh
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/environment/path.dsv
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/local_setup.bash
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/local_setup.sh
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/local_setup.zsh
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/local_setup.dsv
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/package.dsv
+-- Installing: /home/fcl/USBSerial/install/do1/share/ament_index/resource_index/packages/do1
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/cmake/do1Config.cmake
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/cmake/do1Config-version.cmake
+-- Installing: /home/fcl/USBSerial/install/do1/share/do1/package.xml
