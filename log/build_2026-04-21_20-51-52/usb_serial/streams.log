@@ -1,0 +1,24 @@
+[0.008s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.082s] [  7%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[0.314s] [ 14%] [32m[1mLinking CXX executable usb_serial[0m
+[0.399s] [100%] Built target usb_serial
+[0.411s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '0': /usr/bin/cmake --build /home/fcl/servo-gripper/build/usb_serial -- -j20 -l20
+[0.422s] Invoking command in '/home/fcl/servo-gripper/build/usb_serial': /usr/bin/cmake --install /home/fcl/servo-gripper/build/usb_serial
+[0.430s] -- Install configuration: ""
+[0.430s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial
+[0.430s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/package_run_dependencies/usb_serial
+[0.430s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/parent_prefix_path/usb_serial
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.sh
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.dsv
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.sh
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.dsv
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.bash
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.sh
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.zsh
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.dsv
+[0.431s] -- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.dsv
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/packages/usb_serial
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig.cmake
+[0.431s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig-version.cmake
+[0.432s] -- Up-to-date: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.xml
+[0.432s] Invoked command in '/home/fcl/servo-gripper/build/usb_serial' returned '0': /usr/bin/cmake --install /home/fcl/servo-gripper/build/usb_serial

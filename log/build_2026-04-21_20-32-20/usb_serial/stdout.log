@@ -1,0 +1,65 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Building with ROS2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fcl/servo-gripper/build/usb_serial
+[ 14%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o[0m
+[100%] [32m[1mLinking CXX executable usb_serial[0m
+[100%] Built target usb_serial
+-- Install configuration: ""
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial
+-- Set runtime path of "/home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial" to ""
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/package_run_dependencies/usb_serial
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/parent_prefix_path/usb_serial
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.sh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.dsv
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.sh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.dsv
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.bash
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.sh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.zsh
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.dsv
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.dsv
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/packages/usb_serial
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig.cmake
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig-version.cmake
+-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.xml

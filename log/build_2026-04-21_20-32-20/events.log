@@ -1,0 +1,183 @@
+[0.000000] (-) TimerEvent: {}
+[0.000307] (usb_serial) JobQueued: {'identifier': 'usb_serial', 'dependencies': OrderedDict()}
+[0.000474] (usb_serial) JobStarted: {'identifier': 'usb_serial'}
+[0.005522] (usb_serial) JobProgress: {'identifier': 'usb_serial', 'progress': 'cmake'}
+[0.005866] (usb_serial) Command: {'cmd': ['/usr/bin/cmake', '/home/fcl/servo-gripper/src', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/fcl/servo-gripper/install/usb_serial'], 'cwd': '/home/fcl/servo-gripper/build/usb_serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'fcl'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fcl'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/fcl'), ('TERM_PROGRAM_VERSION', '1.108.0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2476'), ('BUNDLED_DEBUGPY_PATH', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/fcl/miniconda3'), ('https_proxy', 'http://127.0.0.1:7897'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fcl'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '44199'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fcl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/miniconda3/condabin:/opt/ros/humble/bin:/home/fcl/.cargo/bin:/home/fcl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2476,unix/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2476'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/779f0e80_3d24_465d_bb66_7fcf12aea273'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7caaa2985611951.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/fcl/.config/Code/User/workspaceStorage/bed19af82dc543b0dd11f04af339872c/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3c0247043f.sock'), ('GNOME_TERMINAL_SERVICE', ':1.2536'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/fcl/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fcl/servo-gripper/build/usb_serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.087144] (usb_serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099852] (-) TimerEvent: {}
+[0.150193] (usb_serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.200024] (-) TimerEvent: {}
+[0.212141] (usb_serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300160] (-) TimerEvent: {}
+[0.325616] (usb_serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.340638] (usb_serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.343836] (usb_serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.348729] (usb_serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.368136] (usb_serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400281] (-) TimerEvent: {}
+[0.467420] (usb_serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.473327] (usb_serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.473529] (usb_serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.473988] (usb_serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.500384] (-) TimerEvent: {}
+[0.600768] (-) TimerEvent: {}
+[0.701148] (-) TimerEvent: {}
+[0.791903] (usb_serial) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.801253] (-) TimerEvent: {}
+[0.901614] (-) TimerEvent: {}
+[1.001988] (-) TimerEvent: {}
+[1.102471] (-) TimerEvent: {}
+[1.202967] (-) TimerEvent: {}
+[1.303607] (-) TimerEvent: {}
+[1.404004] (-) TimerEvent: {}
+[1.500942] (usb_serial) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.504104] (-) TimerEvent: {}
+[1.531584] (usb_serial) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.600180] (usb_serial) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.604191] (-) TimerEvent: {}
+[1.683722] (usb_serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.704407] (-) TimerEvent: {}
+[1.786694] (usb_serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.804540] (-) TimerEvent: {}
+[1.905102] (-) TimerEvent: {}
+[2.005680] (-) TimerEvent: {}
+[2.071272] (usb_serial) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.093558] (usb_serial) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.105813] (-) TimerEvent: {}
+[2.206278] (-) TimerEvent: {}
+[2.306652] (-) TimerEvent: {}
+[2.407006] (-) TimerEvent: {}
+[2.424021] (usb_serial) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.479903] (usb_serial) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.507106] (-) TimerEvent: {}
+[2.526507] (usb_serial) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.575105] (usb_serial) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.607216] (-) TimerEvent: {}
+[2.669002] (usb_serial) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.669345] (usb_serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.707341] (-) TimerEvent: {}
+[2.731877] (usb_serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.732672] (usb_serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.807554] (-) TimerEvent: {}
+[2.908101] (-) TimerEvent: {}
+[2.949218] (usb_serial) StdoutLine: {'line': b'-- Building with ROS2\n'}
+[3.008206] (-) TimerEvent: {}
+[3.013043] (usb_serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.063042] (usb_serial) StdoutLine: {'line': b'-- Generating done\n'}
+[3.063667] (usb_serial) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[3.063810] (usb_serial) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[3.063910] (usb_serial) StderrLine: {'line': b'\n'}
+[3.064001] (usb_serial) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[3.064080] (usb_serial) StderrLine: {'line': b'\n'}
+[3.064156] (usb_serial) StderrLine: {'line': b'\x1b[0m\n'}
+[3.066749] (usb_serial) StdoutLine: {'line': b'-- Build files have been written to: /home/fcl/servo-gripper/build/usb_serial\n'}
+[3.074070] (usb_serial) CommandEnded: {'returncode': 0}
+[3.074647] (usb_serial) JobProgress: {'identifier': 'usb_serial', 'progress': 'build'}
+[3.075430] (usb_serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fcl/servo-gripper/build/usb_serial', '--', '-j20', '-l20'], 'cwd': '/home/fcl/servo-gripper/build/usb_serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'fcl'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fcl'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/fcl'), ('TERM_PROGRAM_VERSION', '1.108.0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2476'), ('BUNDLED_DEBUGPY_PATH', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/fcl/miniconda3'), ('https_proxy', 'http://127.0.0.1:7897'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fcl'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '44199'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fcl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/miniconda3/condabin:/opt/ros/humble/bin:/home/fcl/.cargo/bin:/home/fcl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2476,unix/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2476'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/779f0e80_3d24_465d_bb66_7fcf12aea273'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7caaa2985611951.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/fcl/.config/Code/User/workspaceStorage/bed19af82dc543b0dd11f04af339872c/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3c0247043f.sock'), ('GNOME_TERMINAL_SERVICE', ':1.2536'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/fcl/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fcl/servo-gripper/build/usb_serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[3.108355] (-) TimerEvent: {}
+[3.147505] (usb_serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LG.cpp.o\x1b[0m\n'}
+[3.147712] (usb_serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_END.cpp.o\x1b[0m\n'}
+[3.147785] (usb_serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RG.cpp.o\x1b[0m\n'}
+[3.147839] (usb_serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LtoR.cpp.o\x1b[0m\n'}
+[3.148111] (usb_serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/ControlFrame.cpp.o\x1b[0m\n'}
+[3.148235] (usb_serial) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/KeyBoard.cpp.o\x1b[0m\n'}
+[3.148534] (usb_serial) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/usb_serial.cpp.o\x1b[0m\n'}
+[3.149037] (usb_serial) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSM.cpp.o\x1b[0m\n'}
+[3.149228] (usb_serial) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/FSMState.cpp.o\x1b[0m\n'}
+[3.149514] (usb_serial) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_LP.cpp.o\x1b[0m\n'}
+[3.150491] (usb_serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RP.cpp.o\x1b[0m\n'}
+[3.150643] (usb_serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/FSM/State_RtoL.cpp.o\x1b[0m\n'}
+[3.150798] (usb_serial) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/usb_serial.dir/src/src/KeyBoard/Command.cpp.o\x1b[0m\n'}
+[3.208515] (-) TimerEvent: {}
+[3.309448] (-) TimerEvent: {}
+[3.409719] (-) TimerEvent: {}
+[3.510060] (-) TimerEvent: {}
+[3.610338] (-) TimerEvent: {}
+[3.710631] (-) TimerEvent: {}
+[3.810959] (-) TimerEvent: {}
+[3.911292] (-) TimerEvent: {}
+[4.011852] (-) TimerEvent: {}
+[4.112093] (-) TimerEvent: {}
+[4.212376] (-) TimerEvent: {}
+[4.312649] (-) TimerEvent: {}
+[4.412917] (-) TimerEvent: {}
+[4.513165] (-) TimerEvent: {}
+[4.613446] (-) TimerEvent: {}
+[4.713725] (-) TimerEvent: {}
+[4.814006] (-) TimerEvent: {}
+[4.914271] (-) TimerEvent: {}
+[5.014543] (-) TimerEvent: {}
+[5.114833] (-) TimerEvent: {}
+[5.215101] (-) TimerEvent: {}
+[5.315404] (-) TimerEvent: {}
+[5.415719] (-) TimerEvent: {}
+[5.515970] (-) TimerEvent: {}
+[5.616225] (-) TimerEvent: {}
+[5.716478] (-) TimerEvent: {}
+[5.816835] (-) TimerEvent: {}
+[5.917291] (-) TimerEvent: {}
+[6.017551] (-) TimerEvent: {}
+[6.117829] (-) TimerEvent: {}
+[6.218120] (-) TimerEvent: {}
+[6.318399] (-) TimerEvent: {}
+[6.418754] (-) TimerEvent: {}
+[6.519035] (-) TimerEvent: {}
+[6.619307] (-) TimerEvent: {}
+[6.719593] (-) TimerEvent: {}
+[6.819851] (-) TimerEvent: {}
+[6.920145] (-) TimerEvent: {}
+[7.020403] (-) TimerEvent: {}
+[7.120664] (-) TimerEvent: {}
+[7.220963] (-) TimerEvent: {}
+[7.321167] (-) TimerEvent: {}
+[7.421389] (-) TimerEvent: {}
+[7.521723] (-) TimerEvent: {}
+[7.622069] (-) TimerEvent: {}
+[7.722295] (-) TimerEvent: {}
+[7.822546] (-) TimerEvent: {}
+[7.922867] (-) TimerEvent: {}
+[8.023104] (-) TimerEvent: {}
+[8.123353] (-) TimerEvent: {}
+[8.223594] (-) TimerEvent: {}
+[8.323925] (-) TimerEvent: {}
+[8.424148] (-) TimerEvent: {}
+[8.524395] (-) TimerEvent: {}
+[8.624718] (-) TimerEvent: {}
+[8.725060] (-) TimerEvent: {}
+[8.825295] (-) TimerEvent: {}
+[8.925550] (-) TimerEvent: {}
+[9.025762] (-) TimerEvent: {}
+[9.126005] (-) TimerEvent: {}
+[9.226273] (-) TimerEvent: {}
+[9.293168] (usb_serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable usb_serial\x1b[0m\n'}
+[9.326407] (-) TimerEvent: {}
+[9.426851] (-) TimerEvent: {}
+[9.527083] (-) TimerEvent: {}
+[9.627312] (-) TimerEvent: {}
+[9.727647] (-) TimerEvent: {}
+[9.827991] (-) TimerEvent: {}
+[9.849049] (usb_serial) StdoutLine: {'line': b'[100%] Built target usb_serial\n'}
+[9.859399] (usb_serial) CommandEnded: {'returncode': 0}
+[9.859931] (usb_serial) JobProgress: {'identifier': 'usb_serial', 'progress': 'install'}
+[9.872317] (usb_serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fcl/servo-gripper/build/usb_serial'], 'cwd': '/home/fcl/servo-gripper/build/usb_serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'fcl'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fcl'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/fcl'), ('TERM_PROGRAM_VERSION', '1.108.0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2476'), ('BUNDLED_DEBUGPY_PATH', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/fcl/miniconda3'), ('https_proxy', 'http://127.0.0.1:7897'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fcl'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '44199'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fcl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/fcl/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/node-v24.14.0/bin:/usr/local/cuda-12.2/bin:/home/fcl/miniconda3/condabin:/opt/ros/humble/bin:/home/fcl/.cargo/bin:/home/fcl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2476,unix/fcl-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2476'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/779f0e80_3d24_465d_bb66_7fcf12aea273'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/fcl/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7caaa2985611951.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/fcl/.config/Code/User/workspaceStorage/bed19af82dc543b0dd11f04af339872c/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3c0247043f.sock'), ('GNOME_TERMINAL_SERVICE', ':1.2536'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/fcl/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/fcl/servo-gripper/build/usb_serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/fcl/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f9d9ea0a96a0b4922b5093269e713c0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[9.886084] (usb_serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.886409] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial\n'}
+[9.890253] (usb_serial) StdoutLine: {'line': b'-- Set runtime path of "/home/fcl/servo-gripper/install/usb_serial/lib/usb_serial/usb_serial" to ""\n'}
+[9.890460] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/package_run_dependencies/usb_serial\n'}
+[9.890618] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/parent_prefix_path/usb_serial\n'}
+[9.890691] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.sh\n'}
+[9.890786] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/ament_prefix_path.dsv\n'}
+[9.890905] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.sh\n'}
+[9.891029] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/environment/path.dsv\n'}
+[9.891176] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.bash\n'}
+[9.891250] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.sh\n'}
+[9.891337] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.zsh\n'}
+[9.891399] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/local_setup.dsv\n'}
+[9.891455] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.dsv\n'}
+[9.891541] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/ament_index/resource_index/packages/usb_serial\n'}
+[9.891635] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig.cmake\n'}
+[9.891717] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/cmake/usb_serialConfig-version.cmake\n'}
+[9.891792] (usb_serial) StdoutLine: {'line': b'-- Installing: /home/fcl/servo-gripper/install/usb_serial/share/usb_serial/package.xml\n'}
+[9.893945] (usb_serial) CommandEnded: {'returncode': 0}
+[9.913458] (usb_serial) JobEnded: {'identifier': 'usb_serial', 'rc': 0}
+[9.913896] (-) EventReactorShutdown: {}
